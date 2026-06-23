@@ -30,6 +30,7 @@
 
     animation: rocketMove 2s linear 3,
                rocketRotate 1s ease-in-out 11s forwards;
+               rocketlaunch 2s ease-in-out 12.5s forwards;
 }
 
 .rocket img{
@@ -67,6 +68,12 @@
         transform: rotate(-45deg);
     }
 }
+
+@keyframes rocketlaunch {
+    100%{
+        bottom: 400vh;
+    }
+}    
 
 .cody{
     height: 150px;
