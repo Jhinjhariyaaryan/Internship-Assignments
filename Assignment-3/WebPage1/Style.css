@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    font-family: Lato, Arial, sans-serif;
+    background: #f1f1f1;
+    margin: 0;
+    color: #333; 
+}
+
+.header{
+    background-image: url('https://www.w3schools.com/w3images/parallax1.jpg');
+    min-height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity:0.7;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 20px;
+    padding-top: 20px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar ul{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    list-style: none;
+    background: #fff;
+    padding: 10px;
+}
+
+.nav-links{
+    list-style: none;
+}
+
+.nav-links a{
+    text-decoration: none;
+    margin: 0 15px;
+    color: grey;
+    font-family: Lato;
+    font-size: 18px;
+}
+
+.search-button{
+   border: none;
+   height: 20px;
+   margin-right: 20px ;
+   cursor: pointer;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+.logo h1{
+    color: white;
+    background-color: black;
+    padding: 15px;
+    font-weight: 400;
+    font-family: Lato;
+    letter-spacing: 10px;
+}
+
+.primary{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-left: 130px;
+    margin-right: 130px;
+}
+
+.primary h2{
+   color: #777;
+    font-weight: 500;
+    padding-bottom : 20px;
+    font-family: Lata;
+}
+
+.primary h3{
+     color: #777;
+    font-weight: 500;
+    padding-bottom : 23px;
+    font-family: Lata;
+}
+
+.primary p{
+     color: #777;
+    font-weight: 500;
+    padding-bottom : 20px;
+    font-family: Lata;
+    line-height: 1.5;
+}
+
+.secondary{
+    display: flex;
+    gap: 40px;
+    margin: 0px 150px;
+    padding: 50px;
+    color: #777;
+    font-weight: 500;
+    padding-bottom : 20px;
+    font-family: Lata;
+    line-height: 1.5;
+}
+
+.secondary img{
+    height: 80%;
+}
+
+.secondary h3{
+    padding-left: 160px;
+    padding-bottom:10px ;
+}
+
+
+.skill{
+    margin-bottom: 30px;
+}
+
+.skill p{
+    letter-spacing: 8px;
+    color: #666;
+    font-size: 20px;
+}
+
+.progress-bar{
+    width: 100%;
+    height: 40px;
+    background: #ddd;
+}
+
+.progress{
+    height: 100%;
+    background: #666;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.photography{
+    width: 90%;
+}
+
+.web{
+    width: 85%;
+}
+
+.photoshop{
+    width: 75%;
+}
+
+.progressBar{
+     padding-top: 80px;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-left: 130px;
+    margin-right: 130px;
+}
+
+.record{
+    background: #666;
+    color: white;
+    min-height: 130px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    align-items: center;
+    align-content: center;
+    padding-left: 120px;
+    font-family: Lato;
+}
+
+.record-data h2{
+    font-size:30px;
+    font-weight:400;
+    margin-bottom:10px;
+}
+
+.record-data p{
+    font-size: 12px;
+}
+
+.portfolio{
+    background-image: url('https://www.w3schools.com/w3images/parallax2.jpg');
+    min-height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.portfolio h1{
+    font-weight: 400;
+    font-family: Lato;
+    letter-spacing: 10px;
+}
+
+.work{
+    text-align:center;
+    padding:80px 0;
+}
+
+.work h1{
+    font-size:30px;
+    color:#666;
+    font-weight:300;
+    margin-bottom:30px;
+}
+
+.work p{
+    color:#666;
+    font-size:15px;
+    font-style:italic;
+    margin-bottom:15px;
+}
+
+.gallery{
+    width:60%;
+    margin:60px auto;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+    gap:10px;
+}
+
+.gallery img{
+    width:100%;
+    height:250px;
+    border-radius: 5px;
+    object-fit:cover;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.gallery img:hover{
+    opacity:0.7;
+    transform:scale(1.03);
+}
+
+.load-btn{
+    padding:18px 35px;
+    border:none;
+    background:#ddd;
+    font-size:18px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.load-btn:hover{
+    background:#ccc;
+}
+
+.contact{
+    background-image: url('https://www.w3schools.com/w3images/parallax3.jpg');
+    min-height: 400px;
+    margin-top: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    opacity: 0.7;  
+}
+
+.contact h1{
+    font-weight: 400;
+    font-family: Lato;
+    letter-spacing: 10px;
+    color: white;
+    text-shadow: 0 2px 6px rgba(0,0,0,0,6);
+}
+
+.contact-info{
+    text-align: center;
+    margin: 0 auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+form input, form textarea {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+footer {
+    width: 1215px;
+    height: 235px;
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+footer .social a {
+  color: #fff;
+  margin: 0 10px;
+}
+
+button {
+  background: #555;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
