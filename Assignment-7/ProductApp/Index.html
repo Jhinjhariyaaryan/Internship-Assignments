@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style.css">
+    <style>
+        .box{
+            display: flex;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+    <h1>Product Listing</h1>
+    
+    <div class="container">
+        <div class="input">
+            <input id="inp" type="text" placeholder="Search Products...">
+            <button id="btn">Search</button>
+        </div>
+        <div class="filter">
+            <select id="sortSelect">
+                <option>Sort</option>
+                <option value="desc">Price high to low</option>
+                <option value="asc">price low to high</option>
+            </select>
+        </div>
+        <div class="box">
+            <!-- <div class="card">
+                <img src="">
+                <p>product name</p>
+                <p>title</p>
+                <p>price</p>
+            </div> -->
+        </div>
+    </div>
+
+    <script src="./Script.js"></script>
+</body>
+</html>
